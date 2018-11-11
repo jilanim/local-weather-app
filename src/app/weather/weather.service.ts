@@ -49,6 +49,7 @@ export class WeatherService {
   }
 
   private convertKelvinToFahrenheit(kelvin: number): number {
-    return (kelvin * 9) / 5 - 459.67
+    // (kelvin * 9) / 5 - 459.67
+    return kelvin - 273.15
   }
 }
